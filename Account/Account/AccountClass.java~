@@ -32,7 +32,7 @@ public class AccountClass
     public double deposit (double amount)
     {
         if (amount < 0) {
-            System.out.println("/nError: Deposit amount is invalid.");
+            System.out.println("\nError: Deposit amount is invalid.");
             System.out.println(acctNumber + "" + fmt.format(amount));
         }
         else {
@@ -51,19 +51,19 @@ public class AccountClass
         amount += fee;
         
         if (amount < 0) {
-            System.out.println("/nError: Withdraw amount is invalid.");
+            System.out.println("\nError: Withdraw amount is invalid.");
             System.out.println("Account:" + acctNumber);
             System.out.println("Requested: " + fmt.format(amount));
         }
         else {
             if (amount > balance) {
-                System.out.println("/nError: Insufficient funds.");
+                System.out.println("\nError: Insufficient funds.");
                 System.out.println("Account: " + acctNumber);
                 System.out.println("Requested: " + fmt.format(amount));
                 System.out.println("Available: " + fmt.format(balance));
             }
             else {
-                balance = balance = amount;
+                balance = amount;
             }
         }
         return balance;
@@ -100,6 +100,6 @@ public class AccountClass
      */
     public String toString()
     {
-        return (acctNumber + "/t" + name + "/t" + fmt.format(balance));
+        return (acctNumber + "\t" + name + "\t" + fmt.format(balance));
     }
 }

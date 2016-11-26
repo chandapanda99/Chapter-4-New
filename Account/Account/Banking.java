@@ -5,6 +5,7 @@
  * @author (your name) 
  * @version (a version number or a date)
  */
+import java.util.*;
 public class Banking
 {
     /**
@@ -12,7 +13,9 @@ public class Banking
      */
     public static void main (String[] args)
     {
-        AccountClass acct1 = new AccountClass ("Aniket Chanda", 23175, 10209899099.56);
+        Scanner Keyboard = new Scanner(System.in);
+        
+        AccountClass acct1 = new AccountClass ("Aniket Chanda", 23175, 10209.56);
         AccountClass acct2 = new AccountClass ("Debasis Chanda", 25050, 400.00);
         AccountClass acct3 = new AccountClass ("Sugata Chanda", 12345, 759.32);
         
@@ -27,6 +30,17 @@ public class Banking
         acct1.addInterest();
         acct2.addInterest();
         acct3.addInterest();
+        
+        double aniBalance = acct1.getBalance();
+        
+        System.out.println("\n" + acct1);
+        System.out.println(acct2);
+        System.out.println(acct3);
+        
+        System.out.print("\nHow much should be transfered to Debasis? ");
+        double dub = Keyboard.nextDouble();
+        acct1.withdraw(aniBalance - dub, 0);
+        acct2.deposit(dub);
         
         System.out.println("\n" + acct1);
         System.out.println(acct2);

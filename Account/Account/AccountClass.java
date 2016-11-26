@@ -63,7 +63,7 @@ public class AccountClass
                 System.out.println("Available: " + fmt.format(balance));
             }
             else {
-                balance = balance = amount;
+                balance = amount;
             }
         }
         return balance;
