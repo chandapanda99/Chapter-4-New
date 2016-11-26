@@ -9,8 +9,8 @@ public class RationalNumbers
    public static void main (String[] args)
    {
 	   //create Rational numbers
-      RationalClass r1 = new Rational (6, 8);
-      RationalClass r2 = new Rational (1, 3);
+      RationalClass r1 = new RationalClass (6, 8);
+      RationalClass r2 = new RationalClass (1, 3);
       RationalClass r3, r4, r5, r6, r7;
 
 		//use toString to print
