@@ -1,5 +1,3 @@
-package Rational;
-
 /**
 *   Name
 *   Date
@@ -7,7 +5,7 @@ package Rational;
     Description
 ******************************************************************* */
 
-public class RationalClass
+public class Rational
 {
    private int numerator, denominator;
 
