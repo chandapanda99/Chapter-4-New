@@ -1,0 +1,62 @@
+import java.util.Scanner; 
+
+
+public class FriendsTest 
+{
+    public static void main(String[] args) 
+    {
+        Scanner Keyboard = new Scanner(System.in);
+        
+        System.out.println("1.Add a friend");
+        System.out.println("2.Remove a friend"); 
+        System.out.println("3.Display all friends");
+        System.out.println("4.Exit Program\n");
+        
+        int choice = Keyboard.nextInt();
+        
+        friendslist friendlist = new friendslist();
+        
+        
+        while (choice != 4)
+        {
+            int number = 0;
+          
+            if (choice == 1)
+            {
+                System.out.println("Name: ");
+                String name = Keyboard.next();
+                System.out.println("ID: ");
+                String id = Keyboard.next(); 
+                friendlist.setList(name, id);  //sets the values for friend
+                friendlist.addFriend(); // adds the friend to the array list
+            }
+            
+            if (choice == 2)
+            {
+                System.out.println("Name: ");
+                String name = Keyboard.next();
+                System.out.println("ID: ");
+                String id = Keyboard.next(); 
+                friendlist.setList(name, id);  //sets the values for friend
+                friendlist.removeFriend(); // adds the friend to the array list
+            }// end of if
+            
+            if (choice == 3)
+            {
+              
+                 //System.out.println(bornList.toString());
+
+                for(int i= 0; i < 1;i++)
+                {
+                System.out.println(friendlist.list);
+                }
+            }
+          
+                System.out.println("1.Add a friend");
+                System.out.println("2.Remove a friend"); 
+                System.out.println("3.Display all friends");
+                System.out.println("4.Exit Program\n");
+                choice = Keyboard.nextInt(); 
+        } // end of else statement
+    } // end of while loop     
+} // end of main method

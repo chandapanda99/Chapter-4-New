@@ -1,0 +1,58 @@
+
+/**
+ * Class to define an account
+ * 
+ * Aayush Chanda 
+ * Person class
+ */
+public class Person
+{
+    private String nic;
+    private String number;
+    
+    public Person(String first, String id)
+    {
+        nic = first;
+        number = id;
+    }
+    
+    public void befriend(Person p1)
+    {
+        friendListName.add(this.nic);
+        friendListID.add(this.number);
+    }
+    
+    public void unfriend(Person p1)
+    {
+        friendListName.remove(this.nic);
+        friendListName.remove(this.number);
+    }
+    
+    public List<String> getFriendNames()
+    {
+        return friendListName;
+    }
+    
+    public List<String> getFriendNumbers()
+    {
+        return friendListID;
+    }
+    
+    public String getFriend(String friend)
+    {
+        if (friendListName.contains(friend))
+        {
+            System.out.println("Friend found");
+        }
+        else
+        {
+            System.out.println("Friend not found");
+        }
+        return friend;
+    }
+    
+    public int getFriendCount()
+    {
+        return friendListName.size();
+    }
+}

@@ -1,0 +1,64 @@
+
+/**
+ * Write a description of class FriendList here.
+ * 
+ * @author (your name) 
+ * @version (a version number or a date)
+ */
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+public class FriendList
+{
+    private String name;
+    private String id;
+    
+    public ArrayList<String> list = new ArrayList<String>();
+    
+    public void setList(String nic, String num)
+    {
+        name = nic;
+        id = num;
+    }
+    
+    public void befriend(String nic, String num)
+    {
+        list.add(name);
+        list.add(id);
+    }
+    
+    public void unfriend(String nic, String num)
+    {
+        list.remove(name);
+        list.remove(id);
+    }
+    
+    public String getFriendNames()
+    {
+        return name;
+    }
+    
+    public String getFriendNumbers()
+    {
+        return id;
+    }
+    
+    public String getFriend(String friend)
+    {
+        if (list.contains(friend))
+        {
+            System.out.println("Person found");
+        }
+        else
+        {
+            System.out.println("Person not found");
+        }
+        
+        return friend;
+    }
+    
+    public int getFriendCount()
+    {
+        return friends.size();
+    }
+}

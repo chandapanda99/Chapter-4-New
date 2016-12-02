@@ -1,8 +1,0 @@
-#BlueJ class context
-comment0.params=first\ last\ home\ school
-comment0.target=Student(java.lang.String,\ java.lang.String,\ Address,\ Address)
-comment0.text=\r\n\ Sets\ up\ a\ Student\ object\ with\ the\ specified\ initial\ value\r\n
-comment1.params=
-comment1.target=java.lang.String\ toString()
-comment1.text=\r\n\ Returns\ this\ Student\ object\ as\ a\ string\r\n
-numComments=2
