@@ -32,22 +32,22 @@ public class Facebook
           
             if (choice == 1)
             {
-                System.out.println("Name: ");
+                System.out.print("Nickname: ");
                 String name = Keyboard.next();
-                System.out.println("Contact #: ");
-                String id = Keyboard.next(); 
-                friendlist.setList(name, id);  //sets the values for friend
-                friendlist.addFriend(); // adds the friend to the array list
+                System.out.print("Contact #: ");
+                String id = Keyboard.next();
+                friendlist.setList(name, id);
+                friendlist.addFriend();
             }
             
             else if (choice == 2)
             {
-                System.out.println("Name: ");
+                System.out.print("Nickname: ");
                 String name = Keyboard.next();
-                System.out.println("Contact #: ");
+                System.out.print("Contact #: ");
                 String id = Keyboard.next(); 
-                friendlist.setList(name, id);  //sets the values for friend
-                friendlist.removeFriend(); // adds the friend to the array list
+                friendlist.setList(name, id);
+                friendlist.removeFriend();
             }
             
             else if (choice == 3)
@@ -60,12 +60,14 @@ public class Facebook
             
             else if (choice == 4)
             {
-                System.out.print("Name or Contact #: ");
+                System.out.print("Nickname: ");
                 String name = Keyboard.next();
-                friendlist.getFriend(name);
+                System.out.print("Contact #: ");
+                String id = Keyboard.next();
+                friendlist.getFriend(name, id);
             }
           
-                System.out.println("\n1.Add a friend");
+                System.out.println("\n\n1.Add a friend");
                 System.out.println("2.Remove a friend"); 
                 System.out.println("3.Display all friends");
                 System.out.println("4.Search for a friend");

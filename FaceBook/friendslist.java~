@@ -48,5 +48,6 @@ public class friendslist {
         {
             System.out.println("Name is not found");
         }
+        return name;
     }
 }

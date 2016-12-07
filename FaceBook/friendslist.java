@@ -38,16 +38,19 @@ public class friendslist {
         list.remove(num);
     }
     
-    public String getFriend(String name)
+    public String getFriend(String name, String id)
     {
-        if (list.contains(name))
+        if (list.contains(name) && list.contains(id))
         {
-            System.out.println("Name is found");
+            System.out.println("Contact is found");
         }
         else
         {
-            System.out.println("Name is not found");
+            System.out.println("Contact is not found");
         }
+        
+        System.out.println(name);
+        System.out.println(id);
         return name;
     }
 }
