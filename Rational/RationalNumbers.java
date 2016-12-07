@@ -1,3 +1,5 @@
+package Rational;
+
 public class RationalNumbers
 {
    //-----------------------------------------------------------------
@@ -7,9 +9,9 @@ public class RationalNumbers
    public static void main (String[] args)
    {
 	   //create Rational numbers
-      Rational r1 = new Rational (6, 8);
-      Rational r2 = new Rational (1, 3);
-      Rational r3, r4, r5, r6, r7;
+      RationalClass r1 = new Rational (6, 8);
+      RationalClass r2 = new Rational (1, 3);
+      RationalClass r3, r4, r5, r6, r7;
 
 		//use toString to print
       System.out.println ("First rational number: " + r1);
@@ -17,12 +19,12 @@ public class RationalNumbers
 
 		//are the rational numbers equal?
       if (r1.equals(r2))
-         System.out.println (r1 + " and " + r2  + " are equal.");
+         System.out.println ("r1 and r2 are equal.");
       else
-         System.out.println (r1 + " and " + r2  + " are  NOT equal.");
+         System.out.println ("r1 and r2 are NOT equal.");
 
       r3 = r1.reciprocal();//reciprocal of r1
-      System.out.println ("The reciprocal of  " +  r1 + " is: " + r3);
+      System.out.println ("The reciprocal of r1 is: " + r3);
 
       r4 = r1.add(r2);
       r5 = r1.subtract(r2);

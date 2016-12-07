@@ -1,3 +1,5 @@
+package Rational;
+
 /**
 *   Name
 *   Date
@@ -5,7 +7,7 @@
     Description
 ******************************************************************* */
 
-public class Rational
+public class RationalClass
 {
    private int numerator, denominator;
 
