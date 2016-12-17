@@ -4,7 +4,8 @@
  */
 import java.util.ArrayList;
 
-public class friendslist {
+public class friendslist
+{
     private String nic, num;
     
     public ArrayList<String> list = new ArrayList<String>();

@@ -1,7 +1,4 @@
-/*
- * Aayush Chanda
- * Facebook
- */
+//Aayush Chanda
 
 import java.util.*;
 import java.text.*;
@@ -21,6 +18,7 @@ public class Facebook
         System.out.println("4.Search for a friend");
         System.out.println("5.Exit Program\n");
         
+        System.out.print("Enter Choice: ");
         int choice = Keyboard.nextInt();
         
         friendslist friendlist = new friendslist();
@@ -52,10 +50,7 @@ public class Facebook
             
             else if (choice == 3)
             {
-                for(int x= 0; x < 1; x++)
-                {
-                    System.out.println(friendlist.list);
-                }
+                System.out.println(friendlist);
             }
             
             else if (choice == 4)
@@ -72,7 +67,9 @@ public class Facebook
                 System.out.println("3.Display all friends");
                 System.out.println("4.Search for a friend");
                 System.out.println("5.Exit Program\n");
-                choice = Keyboard.nextInt(); 
+                
+                System.out.print("Enter Choice: ");
+                choice = Keyboard.nextInt();
         }
     }  
 }
