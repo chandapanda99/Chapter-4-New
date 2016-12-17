@@ -50,7 +50,10 @@ public class Facebook
             
             else if (choice == 3)
             {
-                System.out.println(friendlist);
+                for(int x= 0; x < 1; x++)
+                {
+                    System.out.println(friendlist.list);
+                }
             }
             
             else if (choice == 4)

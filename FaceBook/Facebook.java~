@@ -1,7 +1,4 @@
-/*
- * Aayush Chanda
- * Facebook
- */
+//Aayush Chanda
 
 import java.util.*;
 import java.text.*;
@@ -53,7 +50,7 @@ public class Facebook
             
             else if (choice == 3)
             {
-                System.out.println(friendlist.toString());
+                System.out.println(friendlist);
             }
             
             else if (choice == 4)
